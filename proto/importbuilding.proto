@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package example;
+
+import "proto/importstreet.proto";
+
+message Building {
+	string building_name = 1;
+	string building_number = 2;
+	Street street = 3;
+}

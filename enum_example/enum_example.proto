@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package example_emumerations;
+
+option go_package = "enum_example;enumpb";
+
+message EnumMessage {
+	int32 id = 1;
+	DayOfTheWeek day_of_the_week = 2;
+}
+
+enum DayOfTheWeek {
+	undefined = 0;
+	monday = 1;
+	thuesday = 2;
+	wednesday = 3;
+	thursday = 4;
+	friday =5;
+	saturday = 6;
+	sunday = 7;
+}
